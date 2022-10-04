@@ -10,6 +10,9 @@ function goHome(){
 function goRegister(){
   navigate('/register')
 }
+function findDonor(){
+  navigate('/FindDonor')
+}
 
   return (
     <div>
@@ -23,8 +26,8 @@ function goRegister(){
       {/* <a href="index.html" class="logo me-auto"><img src="assets/img/apple-touch-icon.png" alt="" class="img-fluid"/></a> */}
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Find Donor</a></li>
+          <li><a onClick={goHome } class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a onClick={findDonor} class="nav-link scrollto" href="#about">Find Donor</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
      
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
